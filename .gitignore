@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-grafo_lista.py
 
 # C extensions
 *.so
@@ -154,4 +153,5 @@ dmypy.json
 cython_debug/
 
 #Otros
+grafo_lista.py
 share/
