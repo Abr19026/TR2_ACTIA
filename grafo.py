@@ -1,14 +1,15 @@
-from typing import (Iterable, List, Iterator, FrozenSet, Set, Tuple, NamedTuple )
 import matplotlib.pyplot as plt
 import networkx as nx
 
+from typing import (Iterable, List, Iterator, FrozenSet, Set, Tuple, NamedTuple )
+
 tipo_nodo = str
-class RutaMasCorta(NamedTuple):
+class RutaToNodo(NamedTuple):
     nodo_anterior: tipo_nodo
     distancia_min: float
     def __repr__(self) -> str:
         return f"({self.nodo_anterior}, {self.distancia_min})"
-ruta_out = dict[tipo_nodo, RutaMasCorta]
+ruta_out = dict[tipo_nodo, RutaToNodo]
 
 class Arista:
     
@@ -51,6 +52,12 @@ class Grafo:
         for arista in adyacencias:
             self.agregar_arista(arista)
 
+    def __str__(self):
+        salida = ""
+        for nodo in migrafo.adyacencias.keys():
+            salida += f"{nodo}: {migrafo.adyacencias[nodo]}\n"
+        return salida
+
     # Limitante: Solo puede haber 1 arista entre cada par de nodos
     def agregar_arista(self, arista: Arista):
         for i, nodo in enumerate(arista.vecinos):
@@ -77,12 +84,52 @@ class Grafo:
             for vecino in self.get_vecinos(nodo):
                 set_aristas.add(Arista((nodo, vecino), self.adyacencias[nodo][vecino]))
         return frozenset(set_aristas)
-    
-    def __str__(self):
-        salida = ""
-        for nodo in migrafo.adyacencias.keys():
-            salida += f"{nodo}: {migrafo.adyacencias[nodo]}\n"
-        return salida
+
+    def costo_nodo(self, nodo1:tipo_nodo, nodo2: tipo_nodo):
+        return self.adyacencias[nodo1][nodo2]
+
+    def dijkstra(self, nodo_inicial: tipo_nodo) -> ruta_out:
+        
+        nodo_cercano: tipo_nodo = nodo_inicial                  # Nodo mas cercano
+        ruta_corta: RutaToNodo = RutaToNodo(nodo_inicial,0)     # Distancia del nodo mas cercano
+        
+        dicc_optimizados: ruta_out = {nodo_cercano: ruta_corta} # Nodos optimizados
+        dicc_busqueda: ruta_out = {nodo_cercano: ruta_corta}    # Candidatos a optimizar
+
+        while True:
+            # Agrega nodo mas cercano a optimizados
+            dicc_optimizados[nodo_cercano] = ruta_corta
+
+            # Quita nodo optimizado de diccionario de busqueda
+            del dicc_busqueda[nodo_cercano]
+
+            # Halla vecinos de nodo optimizado (candidatos de busqueda)
+            # excepto los que ya se optimizaron
+            nodos_candidatos = set(self.get_vecinos(nodo_cercano)).\
+                           difference(set(dicc_optimizados.keys()))
+            
+            # Las rutas de nodos candidato son agregadas a diccionario de búsqueda
+            # Si nodo ya tenía rutas anteriores, las reemplaza solo si nueva ruta
+            # tiene costo menor
+            for vecino in nodos_candidatos:
+                costo_candidato = dicc_optimizados[nodo_cercano].distancia_min \
+                              + self.costo_nodo(nodo_cercano, vecino)
+                ruta_candidato = RutaToNodo(nodo_cercano, costo_candidato)
+
+                if vecino in dicc_busqueda:
+                    if costo_candidato < dicc_busqueda[vecino].distancia_min:
+                        dicc_busqueda[vecino] = ruta_candidato
+                else:
+                    dicc_busqueda[vecino] = ruta_candidato
+
+            # Halla el nuevo nodo mas cercano
+            # Termina algoritmo su ya no hay nodos que buscar
+            try:
+                nodo_cercano = min(dicc_busqueda.keys(), 
+                                  key = lambda x: dicc_busqueda[x].distancia_min)
+                ruta_corta = dicc_busqueda[nodo_cercano]
+            except ValueError:
+                return dicc_optimizados
 
     def graficar(self):
         # Convierte grafo a networkx
@@ -94,58 +141,6 @@ class Grafo:
         labels = nx.get_edge_attributes(grafo_nx,'weight')
         nx.draw_networkx_edge_labels(grafo_nx, pos, edge_labels=labels)
         plt.show()
-
-    def costo(self, nodo1:tipo_nodo, nodo2: tipo_nodo):
-        return self.adyacencias[nodo1][nodo2]
-
-    def djikstra(self, nodo_inicial: tipo_nodo) -> ruta_out:
-        nodo_menor: tipo_nodo = nodo_inicial
-        ruta_menor: RutaMasCorta = RutaMasCorta(nodo_inicial,0)
-
-        distancias_minimas: ruta_out = {nodo_menor: ruta_menor}
-        dicc_busqueda: ruta_out = {nodo_menor: ruta_menor}
-
-        print(nodo_menor)
-
-        while len(dicc_busqueda.keys()) > 0:
-            #breakpoint()
-            # Agrega nodo mas cercano a diccionario final
-            distancias_minimas[nodo_menor] = ruta_menor
-
-            #Agrega rutas que salen de nodo mas cercano
-            agregar_rutas(dicc_busqueda, distancias_minimas, nodo_menor, self)
-                        
-            # Quita nodo de diccionario de busqueda
-            del dicc_busqueda[nodo_menor]
-
-            print(f"buscando en: {dicc_busqueda}")
-
-            # Halla el nuevo nodo mas cercano
-            usado = False
-            for nodo, ruta in dicc_busqueda.items():
-                if usado == False:
-                    nodo_menor, ruta_menor = nodo, ruta
-                    usado = True
-                #breakpoint()
-                if ruta.distancia_min < ruta_menor.distancia_min:
-                    nodo_menor, ruta_menor = nodo, ruta
-
-            print(f"nodo mas cercano: {nodo_menor}")
-
-        return distancias_minimas
-
-def agregar_rutas(dicc_busq: ruta_out, dicc_final: ruta_out, nodo: tipo_nodo, grafo: Grafo):
-    #Agrega nodos que no hayan sido optimizados
-    nuevos_nodos = set(grafo.get_vecinos(nodo)).difference(set(dicc_final.keys()))
-    for vecino in nuevos_nodos:
-        nuevo_costo = dicc_final[nodo].distancia_min + grafo.costo(nodo, vecino)
-        ruta_salida = RutaMasCorta(nodo, nuevo_costo)
-        #Si el nodo ya estaba en busqueda, lo reemplaza solo si nuevo camino es menor
-        if vecino in dicc_busq:
-            if nuevo_costo < dicc_busq[vecino].distancia_min:
-                dicc_busq[vecino] = ruta_salida
-        else:
-            dicc_busq[vecino] = ruta_salida
 
 aristas = set([
     ##Arista(('A', 'B'), 1),
@@ -168,6 +163,5 @@ aristas = set([
 ])
 
 migrafo = Grafo(aristas)
-distancias_a = migrafo.djikstra("A")
+distancias_a = migrafo.dijkstra("A")
 print(distancias_a)
-#print(migrafo)
