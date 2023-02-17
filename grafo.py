@@ -1,9 +1,10 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
-from typing import (Iterable, List, Iterator, FrozenSet, Set, Tuple, NamedTuple )
+from typing import (FrozenSet, Tuple, NamedTuple )
 
 tipo_nodo = str
+
 class RutaToNodo(NamedTuple):
     nodo_anterior: tipo_nodo
     distancia_min: float
@@ -85,7 +86,7 @@ class Grafo:
                 set_aristas.add(Arista((nodo, vecino), self.adyacencias[nodo][vecino]))
         return frozenset(set_aristas)
 
-    def costo_nodo(self, nodo1:tipo_nodo, nodo2: tipo_nodo):
+    def costo_nodo(self, nodo1:tipo_nodo, nodo2: tipo_nodo) -> float:
         return self.adyacencias[nodo1][nodo2]
 
     def dijkstra(self, nodo_inicial: tipo_nodo) -> ruta_out:
@@ -142,26 +143,29 @@ class Grafo:
         nx.draw_networkx_edge_labels(grafo_nx, pos, edge_labels=labels)
         plt.show()
 
-aristas = set([
-    ##Arista(('A', 'B'), 1),
-    ##Arista(('A', 'D'), 3),
-    ##Arista(('A', 'C'), 2),
-    ##Arista(('B', 'C'), 4),
-    ##Arista(('C', 'D'), 5),
 
-    Arista(("A","D"),3),
-    Arista(("C","D"),4),
-    Arista(("A","B"),5),
-    Arista(("B","C"),1),
-    Arista(("A","E"),8),
-    Arista(("E","C"),2),
-    Arista(("E","F"),4),
-    Arista(("C","F"),5),
-    Arista(("C","H"),2),
-    Arista(("H","G"),7),
-    Arista(("F","G"),6),
+#Ejemplos de aristas de grafo
+aristas = set([
+    Arista(('A', 'B'), 1),
+    Arista(('A', 'D'), 3),
+    Arista(('A', 'C'), 2),
+    Arista(('B', 'C'), 4),
+    Arista(('C', 'D'), 5),
+
+    #Arista(("A","D"),3),
+    #Arista(("C","D"),4),
+    #Arista(("A","B"),5),
+    #Arista(("B","C"),1),
+    #Arista(("A","E"),8),
+    #Arista(("E","C"),2),
+    #Arista(("E","F"),4),
+    #Arista(("C","F"),5),
+    #Arista(("C","H"),2),
+    #Arista(("H","G"),7),
+    #Arista(("F","G"),6),
 ])
 
-migrafo = Grafo(aristas)
-distancias_a = migrafo.dijkstra("A")
-print(distancias_a)
+migrafo = Grafo(aristas)    #Crea grafo
+distancias_a = migrafo.dijkstra("A")    #Halla distancias de nodo "A" hacia los otros
+print(distancias_a) #Retorna un diccionario que dado nodo_vecino -> (nodo_anterior, distancia_min)
+#migrafo.graficar()  #Muestra grafo en pantalla
