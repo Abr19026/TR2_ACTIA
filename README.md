@@ -1,4 +1,8 @@
-ESTRUCTURA GRAFO EN grafo.py
-Falta:
--AGREGAR DJIKSTRA
--HACER PRUEBAS
+EXPERIMENTACIÓN DJIKSTRA
+========================
+
+El código del grafo está en grafo.py
+
+Las pruebas y nodos de los grafos usadoes están en pruebas.py
+
+Los tiempos de ejecución están en resultados.json

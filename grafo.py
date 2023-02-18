@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
-from typing import (FrozenSet, Tuple, NamedTuple )
+from typing import (FrozenSet, Tuple, NamedTuple, Iterable )
 
 tipo_nodo = str
 
@@ -48,15 +48,15 @@ def aumentar_dict_dict(diccionario: dict[tipo_nodo, dict[tipo_nodo, float]], nod
 
 class Grafo:
 
-    def __init__(self, adyacencias: set[Arista]):
+    def __init__(self, adyacencias: Iterable[Arista]):
         self.adyacencias: dict[tipo_nodo, dict[tipo_nodo,float]] = {}
         for arista in adyacencias:
             self.agregar_arista(arista)
 
     def __str__(self):
         salida = ""
-        for nodo in migrafo.adyacencias.keys():
-            salida += f"{nodo}: {migrafo.adyacencias[nodo]}\n"
+        for nodo in self.adyacencias.keys():
+            salida += f"{nodo}: {self.adyacencias[nodo]}\n"
         return salida
 
     # Limitante: Solo puede haber 1 arista entre cada par de nodos
@@ -142,30 +142,3 @@ class Grafo:
         labels = nx.get_edge_attributes(grafo_nx,'weight')
         nx.draw_networkx_edge_labels(grafo_nx, pos, edge_labels=labels)
         plt.show()
-
-
-#Ejemplos de aristas de grafo
-aristas = set([
-    Arista(('A', 'B'), 1),
-    Arista(('A', 'D'), 3),
-    Arista(('A', 'C'), 2),
-    Arista(('B', 'C'), 4),
-    Arista(('C', 'D'), 5),
-
-    #Arista(("A","D"),3),
-    #Arista(("C","D"),4),
-    #Arista(("A","B"),5),
-    #Arista(("B","C"),1),
-    #Arista(("A","E"),8),
-    #Arista(("E","C"),2),
-    #Arista(("E","F"),4),
-    #Arista(("C","F"),5),
-    #Arista(("C","H"),2),
-    #Arista(("H","G"),7),
-    #Arista(("F","G"),6),
-])
-
-migrafo = Grafo(aristas)    #Crea grafo
-distancias_a = migrafo.dijkstra("A")    #Halla distancias de nodo "A" hacia los otros
-print(distancias_a) #Retorna un diccionario que dado nodo_vecino -> (nodo_anterior, distancia_min)
-#migrafo.graficar()  #Muestra grafo en pantalla
