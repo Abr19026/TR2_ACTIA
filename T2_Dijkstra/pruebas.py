@@ -1,5 +1,6 @@
 from grafo import Grafo, Arista
 import timeit
+import json
 
 #Ejemplos de aristas de grafo
 aristas_ejemplo = set([
@@ -378,4 +379,5 @@ for i, grafo in enumerate(lista_grafos):
             tiempo_ejecucion[i] = {}
         tiempo_ejecucion[i][nodo] = round((t_1 - t_0) * 1000, 3)
 
-print(tiempo_ejecucion)
+with open("./T2_Dijkstra/resultados.json", "w") as archivo_registro:
+    json.dump(tiempo_ejecucion,archivo_registro,indent=1)

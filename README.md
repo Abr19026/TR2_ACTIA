@@ -1,10 +1,11 @@
-EXPERIMENTACIÓN DJIKSTRA
-========================
+TAREAS EQUIPO
+=============
 
-El código del grafo está en grafo.py
+Miembros
+--------
+* Abraham Ramírez Moreno  
+ 1902627
+* Luis Otoniel Tamez Alonso  
+ 1948774
 
-Las pruebas y nodos de los grafos usadoes están en pruebas.py
-
-Los tiempos de ejecución están en resultados.json
-
-Para recrear el diagrama de caja usar boxplot.py
+ 

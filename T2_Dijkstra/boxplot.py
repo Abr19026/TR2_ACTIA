@@ -4,7 +4,7 @@ import math
 
 tiempos = None
 
-with open("resultados.json") as datos:
+with open("./T2_Dijkstra/resultados.json") as datos:
     tiempos = json.load(datos)
 
 array_tiempos = []

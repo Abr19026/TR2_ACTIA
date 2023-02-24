@@ -153,9 +153,4 @@ dmypy.json
 cython_debug/
 
 #Otros
-grafo_lista.py
-share/
-pyvenv.cfg
-pyrightconfig.json
-Scripts/
-Include/
+Dijkstra/grafo_lista.py
