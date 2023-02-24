@@ -1,6 +1,7 @@
 from Algoritmo import busqueda_profundidad, Instancia_Mochila
 import timeit
 import json
+from json import JSONEncoder
 
 # NOMBRES DE ARCHIVOS CON INSTANCIAS
 
@@ -36,14 +37,14 @@ def resultados_instancia(archivo_instancia):
     t_0 = timeit.default_timer()
     mejor_valor, mejor_solucion = busqueda_profundidad(instancia)
     t_1 = timeit.default_timer()
-    tiempo_ejecucion= round((t_1 - t_0) * 1000000, 6)
+    tiempo_ejecucion= round((t_1 - t_0), 6)
 
     # Imprimir los resultados de la instancia
     return {
-        "valores": instancia.valores,
-        "pesos": instancia.pesos,
+        "valores": str(instancia.valores),
+        "pesos": str(instancia.pesos),
         "tiempo": tiempo_ejecucion,
-        "sol_hallada": mejor_solucion,
+        "sol_hallada": str(mejor_solucion),
         "val_hallado": mejor_valor,
         "val_optimo": valor_optimo
     }
