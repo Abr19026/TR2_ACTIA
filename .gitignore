@@ -153,4 +153,4 @@ dmypy.json
 cython_debug/
 
 #Otros
-Dijkstra/grafo_lista.py
+T2_Dijkstra/grafo_lista.py
