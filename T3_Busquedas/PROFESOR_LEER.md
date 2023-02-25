@@ -14,4 +14,5 @@ Información
 * Las definiciones de las instancias están en Instancias/
 * Para probar todos los algoritmos con todas las instancias ejecutar pruebas.py  
   El resultado estará en resultados.json
+* La grafica se genera con graficar_resultados.py
  
