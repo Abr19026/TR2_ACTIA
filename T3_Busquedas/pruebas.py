@@ -1,11 +1,13 @@
 from Algoritmo import busqueda_exhaustiva, busqueda_profundidad, busqueda_voraz, busqueda_a_aster, Instancia_Mochila
 import timeit
 import json
+import os
 
 # NOMBRES DE ARCHIVOS CON INSTANCIAS
 
-direcc_instancias = ["f1.txt", "f2.txt", "f3.txt", "f4.txt", "f5.txt", "f6.txt", "f7.txt", "f8.txt", "f9.txt", "f10.txt"]
-carpeta_instancias = "./T3_Busquedas/instancias/"
+direcc_instancias = ["f1.txt", "f2.txt", "f3.txt"]#, "f4.txt", "f5.txt", "f6.txt", "f7.txt", "f8.txt", "f9.txt", "f10.txt"]
+carpeta_script = os.path.dirname(os.path.abspath(__file__))
+carpeta_instancias = "./Instancias/"
 
 # CONVIERTE EL ARCHIVO EN UNA INSTANCIA
 def archivo_a_instancia(archivo):
@@ -32,7 +34,7 @@ def archivo_a_instancia(archivo):
 algoritmos = {"profundidad": busqueda_profundidad, "exhaustiva": busqueda_exhaustiva, "voraz": busqueda_voraz, "a_aster": busqueda_a_aster}
 
 def resultados_instancia(archivo_instancia):
-    instancia, valor_optimo = archivo_a_instancia(carpeta_instancias + arch_instancia)
+    instancia, valor_optimo = archivo_a_instancia(carpeta_script + carpeta_instancias + arch_instancia)
 
     resultados = {}
     for nombre_alg, algoritmo in algoritmos.items():
@@ -60,7 +62,7 @@ def resultados_instancia(archivo_instancia):
 # REALIZA PRUEBAS
 dicc_resultados = {}
 for arch_instancia in direcc_instancias:
-    resultado_busqueda = resultados_instancia(carpeta_instancias + arch_instancia)
+    resultado_busqueda = resultados_instancia(carpeta_script + arch_instancia)
     dicc_resultados[arch_instancia] = resultado_busqueda
 
 with open("./T3_Busquedas/resultados.json","w") as arch_salida:
