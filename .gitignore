@@ -154,3 +154,4 @@ cython_debug/
 
 #Otros
 T2_Dijkstra/grafo_lista.py
+.vscode/
