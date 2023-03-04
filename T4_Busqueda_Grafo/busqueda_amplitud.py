@@ -1,7 +1,9 @@
 from grafo import Grafo
 from typing import Tuple, List
 
-# Para amplitud con perutaciones de 
+
+"""Halla Ruta mas corta entre nodo inicial 
+y nodo final mediante búsqueda por amplitud"""
 def ruta_mas_corta_amplitud(grafo: Grafo, Nodo_inicial, Nodo_final):
     # Mejor solución hasta ahora
     mejor_peso_solucion = float("inf")

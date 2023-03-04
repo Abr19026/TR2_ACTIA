@@ -1,0 +1,1031 @@
+{
+ "1": {
+  "Nodo_inicial": "A",
+  "tiempo": 0.00014,
+  "A": {
+   "distancia": 0
+  },
+  "B": {
+   "distancia": 2
+  },
+  "C": {
+   "distancia": 4
+  },
+  "D": {
+   "distancia": 1
+  },
+  "E": {
+   "distancia": 3
+  },
+  "F": {
+   "distancia": 6
+  },
+  "G": {
+   "distancia": 5
+  },
+  "H": {
+   "distancia": 7
+  },
+  "I": {
+   "distancia": 7
+  },
+  "J": {
+   "distancia": 10
+  },
+  "K": {
+   "distancia": 11
+  },
+  "L": {
+   "distancia": 6
+  },
+  "M": {
+   "distancia": 8
+  },
+  "N": {
+   "distancia": 13
+  },
+  "O": {
+   "distancia": 11
+  },
+  "P": {
+   "distancia": 12
+  },
+  "Q": {
+   "distancia": 15
+  },
+  "R": {
+   "distancia": 14
+  },
+  "S": {
+   "distancia": 12
+  },
+  "T": {
+   "distancia": 13
+  },
+  "U": {
+   "distancia": 9
+  },
+  "V": {
+   "distancia": 12
+  },
+  "W": {
+   "distancia": 17
+  },
+  "X": {
+   "distancia": 16
+  },
+  "Y": {
+   "distancia": 14
+  },
+  "Z": {
+   "distancia": 21
+  },
+  "A1": {
+   "distancia": 17
+  },
+  "B1": {
+   "distancia": 18
+  },
+  "C1": {
+   "distancia": 19
+  },
+  "D1": {
+   "distancia": 18
+  },
+  "E1": {
+   "distancia": 19
+  },
+  "F1": {
+   "distancia": 15
+  },
+  "G1": {
+   "distancia": 16
+  },
+  "H1": {
+   "distancia": 14
+  },
+  "I1": {
+   "distancia": 11
+  },
+  "J1": {
+   "distancia": 15
+  },
+  "K1": {
+   "distancia": 17
+  },
+  "L1": {
+   "distancia": 23
+  },
+  "M1": {
+   "distancia": 18
+  },
+  "N1": {
+   "distancia": 18
+  },
+  "O1": {
+   "distancia": 20
+  },
+  "P1": {
+   "distancia": 21
+  },
+  "Q1": {
+   "distancia": 20
+  },
+  "R1": {
+   "distancia": 24
+  },
+  "S1": {
+   "distancia": 23
+  }
+ },
+ "2": {
+  "Nodo_inicial": "A",
+  "tiempo": 0.000348,
+  "A": {
+   "distancia": 0
+  },
+  "C": {
+   "distancia": 7
+  },
+  "B": {
+   "distancia": 23
+  },
+  "D": {
+   "distancia": 15
+  },
+  "E": {
+   "distancia": 13
+  },
+  "F": {
+   "distancia": 19
+  },
+  "G": {
+   "distancia": 25
+  },
+  "H": {
+   "distancia": 27
+  },
+  "I": {
+   "distancia": 17
+  },
+  "J": {
+   "distancia": 20
+  },
+  "K": {
+   "distancia": 22
+  },
+  "L": {
+   "distancia": 25
+  },
+  "M": {
+   "distancia": 27
+  },
+  "N": {
+   "distancia": 34
+  },
+  "O": {
+   "distancia": 38
+  },
+  "P": {
+   "distancia": 19
+  },
+  "Q": {
+   "distancia": 26
+  },
+  "R": {
+   "distancia": 29
+  },
+  "S": {
+   "distancia": 28
+  },
+  "T": {
+   "distancia": 33
+  },
+  "U": {
+   "distancia": 35
+  },
+  "V": {
+   "distancia": 26
+  },
+  "W": {
+   "distancia": 33
+  },
+  "X": {
+   "distancia": 36
+  },
+  "Y": {
+   "distancia": 28
+  },
+  "Z": {
+   "distancia": 33
+  },
+  "AA": {
+   "distancia": 36
+  },
+  "AB": {
+   "distancia": 34
+  },
+  "AC": {
+   "distancia": 38
+  },
+  "AD": {
+   "distancia": 41
+  },
+  "AE": {
+   "distancia": 46
+  },
+  "AF": {
+   "distancia": 50
+  },
+  "AG": {
+   "distancia": 52
+  },
+  "AH": {
+   "distancia": 51
+  },
+  "AI": {
+   "distancia": 53
+  },
+  "AJ": {
+   "distancia": 57
+  },
+  "AK": {
+   "distancia": 24
+  },
+  "AL": {
+   "distancia": 27
+  },
+  "AM": {
+   "distancia": 31
+  },
+  "AN": {
+   "distancia": 37
+  },
+  "AO": {
+   "distancia": 39
+  },
+  "AP": {
+   "distancia": 42
+  },
+  "AQ": {
+   "distancia": 44
+  },
+  "AR": {
+   "distancia": 46
+  },
+  "AS": {
+   "distancia": 49
+  },
+  "AT": {
+   "distancia": 37
+  },
+  "AU": {
+   "distancia": 40
+  },
+  "AV": {
+   "distancia": 44
+  },
+  "AW": {
+   "distancia": 51
+  },
+  "AX": {
+   "distancia": 53
+  },
+  "AY": {
+   "distancia": 55
+  },
+  "AZ": {
+   "distancia": 48
+  },
+  "BA": {
+   "distancia": 50
+  },
+  "BB": {
+   "distancia": 53
+  },
+  "BC": {
+   "distancia": 37
+  },
+  "BD": {
+   "distancia": 39
+  },
+  "BE": {
+   "distancia": 41
+  },
+  "BF": {
+   "distancia": 50
+  },
+  "BG": {
+   "distancia": 52
+  },
+  "BH": {
+   "distancia": 55
+  },
+  "BI": {
+   "distancia": 50
+  },
+  "BJ": {
+   "distancia": 52
+  },
+  "BK": {
+   "distancia": 55
+  },
+  "BL": {
+   "distancia": 40
+  },
+  "BM": {
+   "distancia": 43
+  },
+  "BN": {
+   "distancia": 46
+  },
+  "BO": {
+   "distancia": 46
+  },
+  "BP": {
+   "distancia": 49
+  },
+  "BQ": {
+   "distancia": 53
+  },
+  "BR": {
+   "distancia": 47
+  },
+  "BS": {
+   "distancia": 50
+  },
+  "BT": {
+   "distancia": 47
+  },
+  "BU": {
+   "distancia": 49
+  },
+  "BV": {
+   "distancia": 52
+  },
+  "BW": {
+   "distancia": 57
+  },
+  "BX": {
+   "distancia": 60
+  },
+  "BY": {
+   "distancia": 63
+  },
+  "BZ": {
+   "distancia": 61
+  },
+  "CA": {
+   "distancia": 64
+  },
+  "CB": {
+   "distancia": 67
+  },
+  "CC": {
+   "distancia": 63
+  },
+  "CD": {
+   "distancia": 66
+  },
+  "CE": {
+   "distancia": 68
+  },
+  "CF": {
+   "distancia": 65
+  },
+  "CG": {
+   "distancia": 68
+  },
+  "CH": {
+   "distancia": 71
+  },
+  "CI": {
+   "distancia": 66
+  },
+  "CJ": {
+   "distancia": 69
+  },
+  "CK": {
+   "distancia": 72
+  },
+  "CL": {
+   "distancia": 64
+  },
+  "CM": {
+   "distancia": 67
+  },
+  "CN": {
+   "distancia": 70
+  },
+  "CO": {
+   "distancia": 65
+  },
+  "CP": {
+   "distancia": 68
+  },
+  "CQ": {
+   "distancia": 71
+  },
+  "CR": {
+   "distancia": 68
+  },
+  "CS": {
+   "distancia": 71
+  },
+  "CT": {
+   "distancia": 74
+  },
+  "CU": {
+   "distancia": 34
+  },
+  "CV": {
+   "distancia": 37
+  },
+  "CW": {
+   "distancia": 40
+  },
+  "CX": {
+   "distancia": 36
+  },
+  "CY": {
+   "distancia": 39
+  },
+  "CZ": {
+   "distancia": 42
+  },
+  "DA": {
+   "distancia": 39
+  },
+  "DB": {
+   "distancia": 42
+  },
+  "DC": {
+   "distancia": 45
+  },
+  "DD": {
+   "distancia": 44
+  },
+  "DE": {
+   "distancia": 47
+  },
+  "DF": {
+   "distancia": 50
+  },
+  "DG": {
+   "distancia": 45
+  },
+  "DH": {
+   "distancia": 48
+  },
+  "DI": {
+   "distancia": 51
+  },
+  "DJ": {
+   "distancia": 47
+  },
+  "DK": {
+   "distancia": 50
+  },
+  "DL": {
+   "distancia": 53
+  },
+  "DM": {
+   "distancia": 48
+  },
+  "DN": {
+   "distancia": 51
+  },
+  "DO": {
+   "distancia": 54
+  },
+  "DP": {
+   "distancia": 49
+  },
+  "DQ": {
+   "distancia": 52
+  },
+  "DR": {
+   "distancia": 55
+  },
+  "DS": {
+   "distancia": 51
+  },
+  "DT": {
+   "distancia": 54
+  },
+  "DU": {
+   "distancia": 57
+  },
+  "DV": {
+   "distancia": 40
+  },
+  "DW": {
+   "distancia": 43
+  },
+  "DX": {
+   "distancia": 46
+  },
+  "DY": {
+   "distancia": 44
+  },
+  "DZ": {
+   "distancia": 47
+  },
+  "EA": {
+   "distancia": 50
+  },
+  "EB": {
+   "distancia": 49
+  },
+  "EC": {
+   "distancia": 52
+  },
+  "ED": {
+   "distancia": 55
+  },
+  "EE": {
+   "distancia": 57
+  },
+  "EF": {
+   "distancia": 60
+  },
+  "EG": {
+   "distancia": 63
+  },
+  "EH": {
+   "distancia": 60
+  },
+  "EI": {
+   "distancia": 63
+  },
+  "EJ": {
+   "distancia": 66
+  },
+  "EK": {
+   "distancia": 63
+  },
+  "EL": {
+   "distancia": 66
+  },
+  "EM": {
+   "distancia": 69
+  },
+  "EN": {
+   "distancia": 57
+  },
+  "EO": {
+   "distancia": 60
+  },
+  "EP": {
+   "distancia": 63
+  },
+  "EQ": {
+   "distancia": 60
+  }
+ },
+ "3": {
+  "Nodo_inicial": "A",
+  "tiempo": 0.00033,
+  "A": {
+   "distancia": 0
+  },
+  "B": {
+   "distancia": 6
+  },
+  "C": {
+   "distancia": 9
+  },
+  "D": {
+   "distancia": 14
+  },
+  "E": {
+   "distancia": 15
+  },
+  "F": {
+   "distancia": 18
+  },
+  "G": {
+   "distancia": 34
+  },
+  "H": {
+   "distancia": 26
+  },
+  "I": {
+   "distancia": 19
+  },
+  "J": {
+   "distancia": 22
+  },
+  "K": {
+   "distancia": 26
+  },
+  "L": {
+   "distancia": 24
+  },
+  "M": {
+   "distancia": 26
+  },
+  "N": {
+   "distancia": 43
+  },
+  "O": {
+   "distancia": 37
+  },
+  "P": {
+   "distancia": 21
+  },
+  "Q": {
+   "distancia": 33
+  },
+  "R": {
+   "distancia": 31
+  },
+  "S": {
+   "distancia": 30
+  },
+  "T": {
+   "distancia": 35
+  },
+  "U": {
+   "distancia": 37
+  },
+  "V": {
+   "distancia": 30
+  },
+  "W": {
+   "distancia": 37
+  },
+  "X": {
+   "distancia": 40
+  },
+  "Y": {
+   "distancia": 27
+  },
+  "Z": {
+   "distancia": 32
+  },
+  "AA": {
+   "distancia": 35
+  },
+  "AB": {
+   "distancia": 33
+  },
+  "AC": {
+   "distancia": 37
+  },
+  "AD": {
+   "distancia": 40
+  },
+  "AE": {
+   "distancia": 55
+  },
+  "AF": {
+   "distancia": 59
+  },
+  "AG": {
+   "distancia": 61
+  },
+  "AH": {
+   "distancia": 50
+  },
+  "AI": {
+   "distancia": 52
+  },
+  "AJ": {
+   "distancia": 56
+  },
+  "AK": {
+   "distancia": 26
+  },
+  "AL": {
+   "distancia": 29
+  },
+  "AM": {
+   "distancia": 33
+  },
+  "AN": {
+   "distancia": 44
+  },
+  "AO": {
+   "distancia": 46
+  },
+  "AP": {
+   "distancia": 49
+  },
+  "AQ": {
+   "distancia": 46
+  },
+  "AR": {
+   "distancia": 48
+  },
+  "AS": {
+   "distancia": 51
+  },
+  "AT": {
+   "distancia": 39
+  },
+  "AU": {
+   "distancia": 42
+  },
+  "AV": {
+   "distancia": 46
+  },
+  "AW": {
+   "distancia": 53
+  },
+  "AX": {
+   "distancia": 55
+  },
+  "AY": {
+   "distancia": 57
+  },
+  "AZ": {
+   "distancia": 50
+  },
+  "BA": {
+   "distancia": 52
+  },
+  "BB": {
+   "distancia": 55
+  },
+  "BC": {
+   "distancia": 41
+  },
+  "BD": {
+   "distancia": 43
+  },
+  "BE": {
+   "distancia": 45
+  },
+  "BF": {
+   "distancia": 54
+  },
+  "BG": {
+   "distancia": 56
+  },
+  "BH": {
+   "distancia": 59
+  },
+  "BI": {
+   "distancia": 54
+  },
+  "BJ": {
+   "distancia": 56
+  },
+  "BK": {
+   "distancia": 59
+  },
+  "BL": {
+   "distancia": 39
+  },
+  "BM": {
+   "distancia": 42
+  },
+  "BN": {
+   "distancia": 45
+  },
+  "BO": {
+   "distancia": 44
+  },
+  "BP": {
+   "distancia": 48
+  },
+  "BQ": {
+   "distancia": 52
+  },
+  "BR": {
+   "distancia": 46
+  },
+  "BS": {
+   "distancia": 49
+  },
+  "BT": {
+   "distancia": 46
+  },
+  "BU": {
+   "distancia": 48
+  },
+  "BV": {
+   "distancia": 51
+  },
+  "BW": {
+   "distancia": 56
+  },
+  "BX": {
+   "distancia": 59
+  },
+  "BY": {
+   "distancia": 62
+  },
+  "BZ": {
+   "distancia": 60
+  },
+  "CA": {
+   "distancia": 63
+  },
+  "CB": {
+   "distancia": 66
+  },
+  "CC": {
+   "distancia": 72
+  },
+  "CD": {
+   "distancia": 75
+  },
+  "CE": {
+   "distancia": 77
+  },
+  "CF": {
+   "distancia": 74
+  },
+  "CG": {
+   "distancia": 77
+  },
+  "CH": {
+   "distancia": 80
+  },
+  "CI": {
+   "distancia": 75
+  },
+  "CJ": {
+   "distancia": 78
+  },
+  "CK": {
+   "distancia": 81
+  },
+  "CL": {
+   "distancia": 63
+  },
+  "CM": {
+   "distancia": 70
+  },
+  "CN": {
+   "distancia": 69
+  },
+  "CO": {
+   "distancia": 64
+  },
+  "CP": {
+   "distancia": 67
+  },
+  "CQ": {
+   "distancia": 70
+  },
+  "CR": {
+   "distancia": 67
+  },
+  "CS": {
+   "distancia": 70
+  },
+  "CT": {
+   "distancia": 73
+  },
+  "CU": {
+   "distancia": 36
+  },
+  "CV": {
+   "distancia": 39
+  },
+  "CW": {
+   "distancia": 42
+  },
+  "CX": {
+   "distancia": 38
+  },
+  "CY": {
+   "distancia": 41
+  },
+  "CZ": {
+   "distancia": 44
+  },
+  "DA": {
+   "distancia": 41
+  },
+  "DB": {
+   "distancia": 44
+  },
+  "DC": {
+   "distancia": 47
+  },
+  "DD": {
+   "distancia": 51
+  },
+  "DE": {
+   "distancia": 54
+  },
+  "DF": {
+   "distancia": 57
+  },
+  "DG": {
+   "distancia": 52
+  },
+  "DH": {
+   "distancia": 55
+  },
+  "DI": {
+   "distancia": 58
+  },
+  "DJ": {
+   "distancia": 54
+  },
+  "DK": {
+   "distancia": 57
+  },
+  "DL": {
+   "distancia": 60
+  },
+  "DM": {
+   "distancia": 50
+  },
+  "DN": {
+   "distancia": 50
+  },
+  "DO": {
+   "distancia": 56
+  },
+  "DP": {
+   "distancia": 51
+  },
+  "DQ": {
+   "distancia": 54
+  },
+  "DR": {
+   "distancia": 57
+  },
+  "DS": {
+   "distancia": 54
+  },
+  "DT": {
+   "distancia": 56
+  },
+  "DU": {
+   "distancia": 59
+  },
+  "DV": {
+   "distancia": 42
+  },
+  "DW": {
+   "distancia": 45
+  },
+  "DX": {
+   "distancia": 48
+  },
+  "DY": {
+   "distancia": 46
+  },
+  "DZ": {
+   "distancia": 67
+  },
+  "EA": {
+   "distancia": 52
+  },
+  "EB": {
+   "distancia": 51
+  },
+  "EC": {
+   "distancia": 54
+  },
+  "ED": {
+   "distancia": 57
+  },
+  "EE": {
+   "distancia": 59
+  },
+  "EF": {
+   "distancia": 62
+  },
+  "EG": {
+   "distancia": 69
+  },
+  "EH": {
+   "distancia": 62
+  },
+  "EI": {
+   "distancia": 65
+  },
+  "EJ": {
+   "distancia": 68
+  },
+  "EK": {
+   "distancia": 65
+  },
+  "EL": {
+   "distancia": 68
+  },
+  "EM": {
+   "distancia": 71
+  },
+  "EN": {
+   "distancia": 57
+  },
+  "EO": {
+   "distancia": 62
+  },
+  "EP": {
+   "distancia": 51
+  },
+  "EQ": {
+   "distancia": 66
+  }
+ }
+}

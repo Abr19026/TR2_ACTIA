@@ -1,0 +1,1691 @@
+{
+ "1": {
+  "Nodo_inicial": "A",
+  "B": {
+   "ruta_hallada": "('A', 'B')",
+   "distancia": 2,
+   "tiempo": 7e-05
+  },
+  "C": {
+   "ruta_hallada": "('A', 'C')",
+   "distancia": 4,
+   "tiempo": 0.000114
+  },
+  "D": {
+   "ruta_hallada": "('A', 'D')",
+   "distancia": 1,
+   "tiempo": 3.5e-05
+  },
+  "E": {
+   "ruta_hallada": "('A', 'B', 'E')",
+   "distancia": 3,
+   "tiempo": 0.000102
+  },
+  "F": {
+   "ruta_hallada": "('A', 'D', 'F')",
+   "distancia": 6,
+   "tiempo": 0.000869
+  },
+  "G": {
+   "ruta_hallada": "('A', 'B', 'E', 'G')",
+   "distancia": 5,
+   "tiempo": 0.000293
+  },
+  "H": {
+   "ruta_hallada": "('A', 'C', 'H')",
+   "distancia": 7,
+   "tiempo": 0.000812
+  },
+  "I": {
+   "ruta_hallada": "('A', 'B', 'E', 'I')",
+   "distancia": 7,
+   "tiempo": 0.00087
+  },
+  "J": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'J')",
+   "distancia": 10,
+   "tiempo": 0.002034
+  },
+  "K": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'J', 'K')",
+   "distancia": 11,
+   "tiempo": 0.005166
+  },
+  "L": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L')",
+   "distancia": 6,
+   "tiempo": 0.000815
+  },
+  "M": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M')",
+   "distancia": 8,
+   "tiempo": 0.002031
+  },
+  "N": {
+   "ruta_hallada": "('A', 'C', 'H', 'N')",
+   "distancia": 13,
+   "tiempo": 0.009627
+  },
+  "O": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O')",
+   "distancia": 11,
+   "tiempo": 0.004774
+  },
+  "P": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P')",
+   "distancia": 12,
+   "tiempo": 0.004653
+  },
+  "Q": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Q')",
+   "distancia": 15,
+   "tiempo": 0.009575
+  },
+  "R": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'J', 'K', 'R')",
+   "distancia": 14,
+   "tiempo": 0.009557
+  },
+  "S": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L', 'S')",
+   "distancia": 12,
+   "tiempo": 0.004644
+  },
+  "T": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L', 'T')",
+   "distancia": 13,
+   "tiempo": 0.00956
+  },
+  "U": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M', 'U')",
+   "distancia": 9,
+   "tiempo": 0.002037
+  },
+  "V": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M', 'V')",
+   "distancia": 12,
+   "tiempo": 0.005614
+  },
+  "W": {
+   "ruta_hallada": "('A', 'C', 'H', 'N', 'W')",
+   "distancia": 17,
+   "tiempo": 0.023725
+  },
+  "X": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'X')",
+   "distancia": 16,
+   "tiempo": 0.017954
+  },
+  "Y": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Y')",
+   "distancia": 14,
+   "tiempo": 0.009549
+  },
+  "Z": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Q', 'Z')",
+   "distancia": 21,
+   "tiempo": 0.059934
+  },
+  "A1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Q', 'A1')",
+   "distancia": 17,
+   "tiempo": 0.023122
+  },
+  "B1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'J', 'K', 'R', 'B1')",
+   "distancia": 18,
+   "tiempo": 0.03104
+  },
+  "C1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'J', 'K', 'R', 'C1')",
+   "distancia": 19,
+   "tiempo": 0.031011
+  },
+  "D1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L', 'S', 'D1')",
+   "distancia": 18,
+   "tiempo": 0.03102
+  },
+  "E1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L', 'S', 'E1')",
+   "distancia": 19,
+   "tiempo": 0.03752
+  },
+  "F1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L', 'T', 'F1')",
+   "distancia": 15,
+   "tiempo": 0.009545
+  },
+  "G1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'L', 'T', 'G1')",
+   "distancia": 16,
+   "tiempo": 0.024544
+  },
+  "H1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M', 'U', 'H1')",
+   "distancia": 14,
+   "tiempo": 0.009535
+  },
+  "I1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M', 'U', 'I1')",
+   "distancia": 11,
+   "tiempo": 0.006891
+  },
+  "J1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M', 'V', 'J1')",
+   "distancia": 15,
+   "tiempo": 0.014038
+  },
+  "K1": {
+   "ruta_hallada": "('A', 'B', 'E', 'G', 'M', 'V', 'K1')",
+   "distancia": 17,
+   "tiempo": 0.022284
+  },
+  "L1": {
+   "ruta_hallada": "('A', 'C', 'H', 'N', 'W', 'L1')",
+   "distancia": 23,
+   "tiempo": 0.052264
+  },
+  "M1": {
+   "ruta_hallada": "('A', 'C', 'H', 'N', 'W', 'M1')",
+   "distancia": 18,
+   "tiempo": 0.033885
+  },
+  "N1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'X', 'N1')",
+   "distancia": 18,
+   "tiempo": 0.036944
+  },
+  "O1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'X', 'O1')",
+   "distancia": 20,
+   "tiempo": 0.050378
+  },
+  "P1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Y', 'P1')",
+   "distancia": 21,
+   "tiempo": 0.058136
+  },
+  "Q1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Y', 'Q1')",
+   "distancia": 20,
+   "tiempo": 0.036826
+  },
+  "R1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Q', 'Z', 'R1')",
+   "distancia": 24,
+   "tiempo": 0.088812
+  },
+  "S1": {
+   "ruta_hallada": "('A', 'B', 'E', 'I', 'O', 'P', 'Q', 'Z', 'S1')",
+   "distancia": 23,
+   "tiempo": 0.058679
+  }
+ },
+ "2": {
+  "Nodo_inicial": "A",
+  "C": {
+   "ruta_hallada": "('A', 'C')",
+   "distancia": 7,
+   "tiempo": 2.5e-05
+  },
+  "B": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'B')",
+   "distancia": 23,
+   "tiempo": 0.000663
+  },
+  "D": {
+   "ruta_hallada": "('A', 'C', 'E', 'D')",
+   "distancia": 15,
+   "tiempo": 0.0001
+  },
+  "E": {
+   "ruta_hallada": "('A', 'C', 'E')",
+   "distancia": 13,
+   "tiempo": 4.1e-05
+  },
+  "F": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F')",
+   "distancia": 19,
+   "tiempo": 0.000245
+  },
+  "G": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G')",
+   "distancia": 25,
+   "tiempo": 0.00065
+  },
+  "H": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H')",
+   "distancia": 27,
+   "tiempo": 0.001216
+  },
+  "I": {
+   "ruta_hallada": "('A', 'C', 'E', 'I')",
+   "distancia": 17,
+   "tiempo": 0.0001
+  },
+  "J": {
+   "ruta_hallada": "('A', 'C', 'E', 'J')",
+   "distancia": 20,
+   "tiempo": 0.000246
+  },
+  "K": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K')",
+   "distancia": 22,
+   "tiempo": 0.000649
+  },
+  "L": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L')",
+   "distancia": 25,
+   "tiempo": 0.000469
+  },
+  "M": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M')",
+   "distancia": 27,
+   "tiempo": 0.000688
+  },
+  "N": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N')",
+   "distancia": 34,
+   "tiempo": 0.000689
+  },
+  "O": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O')",
+   "distancia": 38,
+   "tiempo": 0.000999
+  },
+  "P": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P')",
+   "distancia": 19,
+   "tiempo": 0.000139
+  },
+  "Q": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q')",
+   "distancia": 26,
+   "tiempo": 0.000687
+  },
+  "R": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R')",
+   "distancia": 29,
+   "tiempo": 0.000688
+  },
+  "S": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S')",
+   "distancia": 28,
+   "tiempo": 0.000688
+  },
+  "T": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T')",
+   "distancia": 33,
+   "tiempo": 0.000687
+  },
+  "U": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U')",
+   "distancia": 35,
+   "tiempo": 0.0008
+  },
+  "V": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'V')",
+   "distancia": 26,
+   "tiempo": 0.001219
+  },
+  "W": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'W')",
+   "distancia": 33,
+   "tiempo": 0.001217
+  },
+  "X": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'X')",
+   "distancia": 36,
+   "tiempo": 0.001217
+  },
+  "Y": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Y')",
+   "distancia": 28,
+   "tiempo": 0.001218
+  },
+  "Z": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Z')",
+   "distancia": 33,
+   "tiempo": 0.001214
+  },
+  "AA": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'AA')",
+   "distancia": 36,
+   "tiempo": 0.001215
+  },
+  "AB": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AB')",
+   "distancia": 34,
+   "tiempo": 0.001215
+  },
+  "AC": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AC')",
+   "distancia": 38,
+   "tiempo": 0.001739
+  },
+  "AD": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AD')",
+   "distancia": 41,
+   "tiempo": 0.001604
+  },
+  "AE": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AE')",
+   "distancia": 46,
+   "tiempo": 0.001009
+  },
+  "AF": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AF')",
+   "distancia": 50,
+   "tiempo": 0.001006
+  },
+  "AG": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AG')",
+   "distancia": 52,
+   "tiempo": 0.001002
+  },
+  "AH": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AH')",
+   "distancia": 51,
+   "tiempo": 0.001365
+  },
+  "AI": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AI')",
+   "distancia": 53,
+   "tiempo": 0.001743
+  },
+  "AJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AJ')",
+   "distancia": 57,
+   "tiempo": 0.001742
+  },
+  "AK": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK')",
+   "distancia": 24,
+   "tiempo": 0.000655
+  },
+  "AL": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL')",
+   "distancia": 27,
+   "tiempo": 0.001217
+  },
+  "AM": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM')",
+   "distancia": 31,
+   "tiempo": 0.001219
+  },
+  "AN": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN')",
+   "distancia": 37,
+   "tiempo": 0.001737
+  },
+  "AO": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO')",
+   "distancia": 39,
+   "tiempo": 0.001738
+  },
+  "AP": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP')",
+   "distancia": 42,
+   "tiempo": 0.001738
+  },
+  "AQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ')",
+   "distancia": 44,
+   "tiempo": 0.001739
+  },
+  "AR": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR')",
+   "distancia": 46,
+   "tiempo": 0.001767
+  },
+  "AS": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS')",
+   "distancia": 49,
+   "tiempo": 0.00174
+  },
+  "AT": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT')",
+   "distancia": 37,
+   "tiempo": 0.001743
+  },
+  "AU": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU')",
+   "distancia": 40,
+   "tiempo": 0.001
+  },
+  "AV": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV')",
+   "distancia": 44,
+   "tiempo": 0.000995
+  },
+  "AW": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW')",
+   "distancia": 51,
+   "tiempo": 0.000995
+  },
+  "AX": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX')",
+   "distancia": 53,
+   "tiempo": 0.000996
+  },
+  "AY": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY')",
+   "distancia": 55,
+   "tiempo": 0.000994
+  },
+  "AZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ')",
+   "distancia": 48,
+   "tiempo": 0.000996
+  },
+  "BA": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'BA')",
+   "distancia": 50,
+   "tiempo": 0.000998
+  },
+  "BB": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'BB')",
+   "distancia": 53,
+   "tiempo": 0.000997
+  },
+  "BC": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'V', 'BC')",
+   "distancia": 37,
+   "tiempo": 0.000994
+  },
+  "BD": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'V', 'BD')",
+   "distancia": 39,
+   "tiempo": 0.000996
+  },
+  "BE": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'V', 'BE')",
+   "distancia": 41,
+   "tiempo": 0.000996
+  },
+  "BF": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'W', 'BF')",
+   "distancia": 50,
+   "tiempo": 0.001354
+  },
+  "BG": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'W', 'BG')",
+   "distancia": 52,
+   "tiempo": 0.001739
+  },
+  "BH": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'W', 'BH')",
+   "distancia": 55,
+   "tiempo": 0.00174
+  },
+  "BI": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'X', 'BI')",
+   "distancia": 50,
+   "tiempo": 0.001739
+  },
+  "BJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'X', 'BJ')",
+   "distancia": 52,
+   "tiempo": 0.000998
+  },
+  "BK": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'K', 'X', 'BK')",
+   "distancia": 55,
+   "tiempo": 0.000997
+  },
+  "BL": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Y', 'BL')",
+   "distancia": 40,
+   "tiempo": 0.000993
+  },
+  "BM": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Y', 'BM')",
+   "distancia": 43,
+   "tiempo": 0.001001
+  },
+  "BN": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Y', 'BN')",
+   "distancia": 46,
+   "tiempo": 0.000997
+  },
+  "BO": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Z', 'BO')",
+   "distancia": 46,
+   "tiempo": 0.000995
+  },
+  "BP": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Z', 'BP')",
+   "distancia": 49,
+   "tiempo": 0.000998
+  },
+  "BQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'Z', 'BQ')",
+   "distancia": 53,
+   "tiempo": 0.000996
+  },
+  "BR": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'AA', 'BR')",
+   "distancia": 47,
+   "tiempo": 0.000999
+  },
+  "BS": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'L', 'AA', 'BS')",
+   "distancia": 50,
+   "tiempo": 0.00134
+  },
+  "BT": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AB', 'BT')",
+   "distancia": 47,
+   "tiempo": 0.001737
+  },
+  "BU": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AB', 'BU')",
+   "distancia": 49,
+   "tiempo": 0.001737
+  },
+  "BV": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AB', 'BV')",
+   "distancia": 52,
+   "tiempo": 0.001739
+  },
+  "BW": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AC', 'BW')",
+   "distancia": 57,
+   "tiempo": 0.001738
+  },
+  "BX": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AC', 'BX')",
+   "distancia": 60,
+   "tiempo": 0.001737
+  },
+  "BY": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AC', 'BY')",
+   "distancia": 63,
+   "tiempo": 0.001737
+  },
+  "BZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AD', 'BZ')",
+   "distancia": 61,
+   "tiempo": 0.001737
+  },
+  "CA": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AD', 'CA')",
+   "distancia": 64,
+   "tiempo": 0.000995
+  },
+  "CB": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'F', 'M', 'AD', 'CB')",
+   "distancia": 67,
+   "tiempo": 0.000998
+  },
+  "CC": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AE', 'CC')",
+   "distancia": 63,
+   "tiempo": 0.001257
+  },
+  "CD": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AE', 'CD')",
+   "distancia": 66,
+   "tiempo": 0.001739
+  },
+  "CE": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AE', 'CE')",
+   "distancia": 68,
+   "tiempo": 0.00174
+  },
+  "CF": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AF', 'CF')",
+   "distancia": 65,
+   "tiempo": 0.001742
+  },
+  "CG": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AF', 'CG')",
+   "distancia": 68,
+   "tiempo": 0.001739
+  },
+  "CH": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AF', 'CH')",
+   "distancia": 71,
+   "tiempo": 0.001739
+  },
+  "CI": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AG', 'CI')",
+   "distancia": 66,
+   "tiempo": 0.001739
+  },
+  "CJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AG', 'CJ')",
+   "distancia": 69,
+   "tiempo": 0.001742
+  },
+  "CK": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'G', 'N', 'AG', 'CK')",
+   "distancia": 72,
+   "tiempo": 0.001741
+  },
+  "CL": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AH', 'CL')",
+   "distancia": 64,
+   "tiempo": 0.001771
+  },
+  "CM": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AH', 'CM')",
+   "distancia": 67,
+   "tiempo": 0.00174
+  },
+  "CN": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AH', 'CN')",
+   "distancia": 70,
+   "tiempo": 0.001743
+  },
+  "CO": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AI', 'CO')",
+   "distancia": 65,
+   "tiempo": 0.001136
+  },
+  "CP": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AI', 'CP')",
+   "distancia": 68,
+   "tiempo": 0.000999
+  },
+  "CQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AI', 'CQ')",
+   "distancia": 71,
+   "tiempo": 0.001001
+  },
+  "CR": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AJ', 'CR')",
+   "distancia": 68,
+   "tiempo": 0.001001
+  },
+  "CS": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AJ', 'CS')",
+   "distancia": 71,
+   "tiempo": 0.000999
+  },
+  "CT": {
+   "ruta_hallada": "('A', 'C', 'E', 'D', 'H', 'O', 'AJ', 'CT')",
+   "distancia": 74,
+   "tiempo": 0.000996
+  },
+  "CU": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK', 'CU')",
+   "distancia": 34,
+   "tiempo": 0.000691
+  },
+  "CV": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK', 'CV')",
+   "distancia": 37,
+   "tiempo": 0.000997
+  },
+  "CW": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK', 'CW')",
+   "distancia": 40,
+   "tiempo": 0.000997
+  },
+  "CX": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL', 'CX')",
+   "distancia": 36,
+   "tiempo": 0.000692
+  },
+  "CY": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL', 'CY')",
+   "distancia": 39,
+   "tiempo": 0.000998
+  },
+  "CZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL', 'CZ')",
+   "distancia": 42,
+   "tiempo": 0.001261
+  },
+  "DA": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM', 'DA')",
+   "distancia": 39,
+   "tiempo": 0.00178
+  },
+  "DB": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM', 'DB')",
+   "distancia": 42,
+   "tiempo": 0.001741
+  },
+  "DC": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM', 'DC')",
+   "distancia": 45,
+   "tiempo": 0.001737
+  },
+  "DD": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN', 'DD')",
+   "distancia": 44,
+   "tiempo": 0.001734
+  },
+  "DE": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN', 'DE')",
+   "distancia": 47,
+   "tiempo": 0.001735
+  },
+  "DF": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN', 'DF')",
+   "distancia": 50,
+   "tiempo": 0.000998
+  },
+  "DG": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO', 'DG')",
+   "distancia": 45,
+   "tiempo": 0.000998
+  },
+  "DH": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO', 'DH')",
+   "distancia": 48,
+   "tiempo": 0.000998
+  },
+  "DI": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO', 'DI')",
+   "distancia": 51,
+   "tiempo": 0.000995
+  },
+  "DJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP', 'DJ')",
+   "distancia": 47,
+   "tiempo": 0.000996
+  },
+  "DK": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP', 'DK')",
+   "distancia": 50,
+   "tiempo": 0.000994
+  },
+  "DL": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP', 'DL')",
+   "distancia": 53,
+   "tiempo": 0.001026
+  },
+  "DM": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ', 'DM')",
+   "distancia": 48,
+   "tiempo": 0.000993
+  },
+  "DN": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ', 'DN')",
+   "distancia": 51,
+   "tiempo": 0.000995
+  },
+  "DO": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ', 'DO')",
+   "distancia": 54,
+   "tiempo": 0.000992
+  },
+  "DP": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR', 'DP')",
+   "distancia": 49,
+   "tiempo": 0.000992
+  },
+  "DQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR', 'DQ')",
+   "distancia": 52,
+   "tiempo": 0.000992
+  },
+  "DR": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR', 'DR')",
+   "distancia": 55,
+   "tiempo": 0.00099
+  },
+  "DS": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS', 'DS')",
+   "distancia": 51,
+   "tiempo": 0.000994
+  },
+  "DT": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS', 'DT')",
+   "distancia": 54,
+   "tiempo": 0.000994
+  },
+  "DU": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS', 'DU')",
+   "distancia": 57,
+   "tiempo": 0.000994
+  },
+  "DV": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT', 'DV')",
+   "distancia": 40,
+   "tiempo": 0.000993
+  },
+  "DW": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT', 'DW')",
+   "distancia": 43,
+   "tiempo": 0.000992
+  },
+  "DX": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT', 'DX')",
+   "distancia": 46,
+   "tiempo": 0.000992
+  },
+  "DY": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU', 'DY')",
+   "distancia": 44,
+   "tiempo": 0.000992
+  },
+  "DZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU', 'DZ')",
+   "distancia": 47,
+   "tiempo": 0.000992
+  },
+  "EA": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU', 'EA')",
+   "distancia": 50,
+   "tiempo": 0.000992
+  },
+  "EB": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV', 'EB')",
+   "distancia": 49,
+   "tiempo": 0.001686
+  },
+  "EC": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV', 'EC')",
+   "distancia": 52,
+   "tiempo": 0.001737
+  },
+  "ED": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV', 'ED')",
+   "distancia": 55,
+   "tiempo": 0.001735
+  },
+  "EE": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW', 'EE')",
+   "distancia": 57,
+   "tiempo": 0.001732
+  },
+  "EF": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW', 'EF')",
+   "distancia": 60,
+   "tiempo": 0.00173
+  },
+  "EG": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW', 'EG')",
+   "distancia": 63,
+   "tiempo": 0.001731
+  },
+  "EH": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX', 'EH')",
+   "distancia": 60,
+   "tiempo": 0.00173
+  },
+  "EI": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX', 'EI')",
+   "distancia": 63,
+   "tiempo": 0.00173
+  },
+  "EJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX', 'EJ')",
+   "distancia": 66,
+   "tiempo": 0.001731
+  },
+  "EK": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY', 'EK')",
+   "distancia": 63,
+   "tiempo": 0.001107
+  },
+  "EL": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY', 'EL')",
+   "distancia": 66,
+   "tiempo": 0.000993
+  },
+  "EM": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY', 'EM')",
+   "distancia": 69,
+   "tiempo": 0.000992
+  },
+  "EN": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ', 'EN')",
+   "distancia": 57,
+   "tiempo": 0.000992
+  },
+  "EO": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ', 'EO')",
+   "distancia": 60,
+   "tiempo": 0.000992
+  },
+  "EP": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ', 'EP')",
+   "distancia": 63,
+   "tiempo": 0.000992
+  },
+  "EQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'BA', 'EQ')",
+   "distancia": 60,
+   "tiempo": 0.000992
+  }
+ },
+ "3": {
+  "Nodo_inicial": "A",
+  "B": {
+   "ruta_hallada": "('A', 'B')",
+   "distancia": 6,
+   "tiempo": 1.9e-05
+  },
+  "C": {
+   "ruta_hallada": "('A', 'C')",
+   "distancia": 9,
+   "tiempo": 1.7e-05
+  },
+  "D": {
+   "ruta_hallada": "('A', 'B', 'D')",
+   "distancia": 14,
+   "tiempo": 3.9e-05
+  },
+  "E": {
+   "ruta_hallada": "('A', 'C', 'E')",
+   "distancia": 15,
+   "tiempo": 3.9e-05
+  },
+  "F": {
+   "ruta_hallada": "('A', 'B', 'D', 'F')",
+   "distancia": 18,
+   "tiempo": 9.8e-05
+  },
+  "G": {
+   "ruta_hallada": "('A', 'B', 'D', 'G')",
+   "distancia": 34,
+   "tiempo": 0.001343
+  },
+  "H": {
+   "ruta_hallada": "('A', 'B', 'D', 'H')",
+   "distancia": 26,
+   "tiempo": 0.000692
+  },
+  "I": {
+   "ruta_hallada": "('A', 'C', 'E', 'I')",
+   "distancia": 19,
+   "tiempo": 9.9e-05
+  },
+  "J": {
+   "ruta_hallada": "('A', 'C', 'E', 'J')",
+   "distancia": 22,
+   "tiempo": 0.000696
+  },
+  "K": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K')",
+   "distancia": 26,
+   "tiempo": 0.000691
+  },
+  "L": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L')",
+   "distancia": 24,
+   "tiempo": 0.000958
+  },
+  "M": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M')",
+   "distancia": 26,
+   "tiempo": 0.001255
+  },
+  "N": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N')",
+   "distancia": 43,
+   "tiempo": 0.003139
+  },
+  "O": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O')",
+   "distancia": 37,
+   "tiempo": 0.001957
+  },
+  "P": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P')",
+   "distancia": 21,
+   "tiempo": 0.000257
+  },
+  "Q": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q')",
+   "distancia": 33,
+   "tiempo": 0.001342
+  },
+  "R": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R')",
+   "distancia": 31,
+   "tiempo": 0.001347
+  },
+  "S": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S')",
+   "distancia": 30,
+   "tiempo": 0.001347
+  },
+  "T": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T')",
+   "distancia": 35,
+   "tiempo": 0.001344
+  },
+  "U": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U')",
+   "distancia": 37,
+   "tiempo": 0.001952
+  },
+  "V": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'V')",
+   "distancia": 30,
+   "tiempo": 0.001345
+  },
+  "W": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'W')",
+   "distancia": 37,
+   "tiempo": 0.002498
+  },
+  "X": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'X')",
+   "distancia": 40,
+   "tiempo": 0.002083
+  },
+  "Y": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Y')",
+   "distancia": 27,
+   "tiempo": 0.001347
+  },
+  "Z": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Z')",
+   "distancia": 32,
+   "tiempo": 0.001342
+  },
+  "AA": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'AA')",
+   "distancia": 35,
+   "tiempo": 0.001341
+  },
+  "AB": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AB')",
+   "distancia": 33,
+   "tiempo": 0.001342
+  },
+  "AC": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AC')",
+   "distancia": 37,
+   "tiempo": 0.001954
+  },
+  "AD": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AD')",
+   "distancia": 40,
+   "tiempo": 0.001948
+  },
+  "AE": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AE')",
+   "distancia": 55,
+   "tiempo": 0.001951
+  },
+  "AF": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AF')",
+   "distancia": 59,
+   "tiempo": 0.002169
+  },
+  "AG": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AG')",
+   "distancia": 61,
+   "tiempo": 0.001971
+  },
+  "AH": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AH')",
+   "distancia": 50,
+   "tiempo": 0.001962
+  },
+  "AI": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AI')",
+   "distancia": 52,
+   "tiempo": 0.001956
+  },
+  "AJ": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AJ')",
+   "distancia": 56,
+   "tiempo": 0.001958
+  },
+  "AK": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK')",
+   "distancia": 26,
+   "tiempo": 0.000698
+  },
+  "AL": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL')",
+   "distancia": 29,
+   "tiempo": 0.001341
+  },
+  "AM": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM')",
+   "distancia": 33,
+   "tiempo": 0.001343
+  },
+  "AN": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN')",
+   "distancia": 44,
+   "tiempo": 0.001951
+  },
+  "AO": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO')",
+   "distancia": 46,
+   "tiempo": 0.001953
+  },
+  "AP": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP')",
+   "distancia": 49,
+   "tiempo": 0.001985
+  },
+  "AQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ')",
+   "distancia": 46,
+   "tiempo": 0.00328
+  },
+  "AR": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR')",
+   "distancia": 48,
+   "tiempo": 0.003415
+  },
+  "AS": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS')",
+   "distancia": 51,
+   "tiempo": 0.001961
+  },
+  "AT": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT')",
+   "distancia": 39,
+   "tiempo": 0.001953
+  },
+  "AU": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU')",
+   "distancia": 42,
+   "tiempo": 0.001953
+  },
+  "AV": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV')",
+   "distancia": 46,
+   "tiempo": 0.001953
+  },
+  "AW": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW')",
+   "distancia": 53,
+   "tiempo": 0.00197
+  },
+  "AX": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX')",
+   "distancia": 55,
+   "tiempo": 0.001957
+  },
+  "AY": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY')",
+   "distancia": 57,
+   "tiempo": 0.001957
+  },
+  "AZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ')",
+   "distancia": 50,
+   "tiempo": 0.001957
+  },
+  "BA": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'BA')",
+   "distancia": 52,
+   "tiempo": 0.001956
+  },
+  "BB": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'BB')",
+   "distancia": 55,
+   "tiempo": 0.001954
+  },
+  "BC": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'V', 'BC')",
+   "distancia": 41,
+   "tiempo": 0.001956
+  },
+  "BD": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'V', 'BD')",
+   "distancia": 43,
+   "tiempo": 0.00196
+  },
+  "BE": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'V', 'BE')",
+   "distancia": 45,
+   "tiempo": 0.002536
+  },
+  "BF": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'W', 'BF')",
+   "distancia": 54,
+   "tiempo": 0.003414
+  },
+  "BG": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'W', 'BG')",
+   "distancia": 56,
+   "tiempo": 0.003426
+  },
+  "BH": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'W', 'BH')",
+   "distancia": 59,
+   "tiempo": 0.001954
+  },
+  "BI": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'X', 'BI')",
+   "distancia": 54,
+   "tiempo": 0.001952
+  },
+  "BJ": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'X', 'BJ')",
+   "distancia": 56,
+   "tiempo": 0.001952
+  },
+  "BK": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'K', 'X', 'BK')",
+   "distancia": 59,
+   "tiempo": 0.00228
+  },
+  "BL": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Y', 'BL')",
+   "distancia": 39,
+   "tiempo": 0.003419
+  },
+  "BM": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Y', 'BM')",
+   "distancia": 42,
+   "tiempo": 0.003413
+  },
+  "BN": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Y', 'BN')",
+   "distancia": 45,
+   "tiempo": 0.003414
+  },
+  "BO": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Z', 'BO')",
+   "distancia": 44,
+   "tiempo": 0.003414
+  },
+  "BP": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Z', 'BP')",
+   "distancia": 48,
+   "tiempo": 0.002529
+  },
+  "BQ": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'Z', 'BQ')",
+   "distancia": 52,
+   "tiempo": 0.001961
+  },
+  "BR": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'AA', 'BR')",
+   "distancia": 46,
+   "tiempo": 0.001956
+  },
+  "BS": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'L', 'AA', 'BS')",
+   "distancia": 49,
+   "tiempo": 0.001957
+  },
+  "BT": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AB', 'BT')",
+   "distancia": 46,
+   "tiempo": 0.001964
+  },
+  "BU": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AB', 'BU')",
+   "distancia": 48,
+   "tiempo": 0.001962
+  },
+  "BV": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AB', 'BV')",
+   "distancia": 51,
+   "tiempo": 0.001958
+  },
+  "BW": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AC', 'BW')",
+   "distancia": 56,
+   "tiempo": 0.001957
+  },
+  "BX": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AC', 'BX')",
+   "distancia": 59,
+   "tiempo": 0.002983
+  },
+  "BY": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AC', 'BY')",
+   "distancia": 62,
+   "tiempo": 0.003418
+  },
+  "BZ": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AD', 'BZ')",
+   "distancia": 60,
+   "tiempo": 0.003417
+  },
+  "CA": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AD', 'CA')",
+   "distancia": 63,
+   "tiempo": 0.003426
+  },
+  "CB": {
+   "ruta_hallada": "('A', 'B', 'D', 'F', 'M', 'AD', 'CB')",
+   "distancia": 66,
+   "tiempo": 0.00324
+  },
+  "CC": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AE', 'CC')",
+   "distancia": 72,
+   "tiempo": 0.001957
+  },
+  "CD": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AE', 'CD')",
+   "distancia": 75,
+   "tiempo": 0.001958
+  },
+  "CE": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AE', 'CE')",
+   "distancia": 77,
+   "tiempo": 0.001955
+  },
+  "CF": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AF', 'CF')",
+   "distancia": 74,
+   "tiempo": 0.001954
+  },
+  "CG": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AF', 'CG')",
+   "distancia": 77,
+   "tiempo": 0.001958
+  },
+  "CH": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AF', 'CH')",
+   "distancia": 80,
+   "tiempo": 0.001953
+  },
+  "CI": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AG', 'CI')",
+   "distancia": 75,
+   "tiempo": 0.001957
+  },
+  "CJ": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AG', 'CJ')",
+   "distancia": 78,
+   "tiempo": 0.00196
+  },
+  "CK": {
+   "ruta_hallada": "('A', 'B', 'D', 'G', 'N', 'AG', 'CK')",
+   "distancia": 81,
+   "tiempo": 0.001958
+  },
+  "CL": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AH', 'CL')",
+   "distancia": 63,
+   "tiempo": 0.001958
+  },
+  "CM": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AH', 'CM')",
+   "distancia": 70,
+   "tiempo": 0.001953
+  },
+  "CN": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AH', 'CN')",
+   "distancia": 69,
+   "tiempo": 0.001956
+  },
+  "CO": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AI', 'CO')",
+   "distancia": 64,
+   "tiempo": 0.001956
+  },
+  "CP": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AI', 'CP')",
+   "distancia": 67,
+   "tiempo": 0.001954
+  },
+  "CQ": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AI', 'CQ')",
+   "distancia": 70,
+   "tiempo": 0.001954
+  },
+  "CR": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AJ', 'CR')",
+   "distancia": 67,
+   "tiempo": 0.002125
+  },
+  "CS": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AJ', 'CS')",
+   "distancia": 70,
+   "tiempo": 0.001995
+  },
+  "CT": {
+   "ruta_hallada": "('A', 'B', 'D', 'H', 'O', 'AJ', 'CT')",
+   "distancia": 73,
+   "tiempo": 0.002009
+  },
+  "CU": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK', 'CU')",
+   "distancia": 36,
+   "tiempo": 0.001346
+  },
+  "CV": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK', 'CV')",
+   "distancia": 39,
+   "tiempo": 0.001954
+  },
+  "CW": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AK', 'CW')",
+   "distancia": 42,
+   "tiempo": 0.001953
+  },
+  "CX": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL', 'CX')",
+   "distancia": 38,
+   "tiempo": 0.001946
+  },
+  "CY": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL', 'CY')",
+   "distancia": 41,
+   "tiempo": 0.00195
+  },
+  "CZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AL', 'CZ')",
+   "distancia": 44,
+   "tiempo": 0.002028
+  },
+  "DA": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM', 'DA')",
+   "distancia": 41,
+   "tiempo": 0.003406
+  },
+  "DB": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM', 'DB')",
+   "distancia": 44,
+   "tiempo": 0.003409
+  },
+  "DC": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'P', 'AM', 'DC')",
+   "distancia": 47,
+   "tiempo": 0.003408
+  },
+  "DD": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN', 'DD')",
+   "distancia": 51,
+   "tiempo": 0.003411
+  },
+  "DE": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN', 'DE')",
+   "distancia": 54,
+   "tiempo": 0.002745
+  },
+  "DF": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AN', 'DF')",
+   "distancia": 57,
+   "tiempo": 0.001957
+  },
+  "DG": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO', 'DG')",
+   "distancia": 52,
+   "tiempo": 0.001956
+  },
+  "DH": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO', 'DH')",
+   "distancia": 55,
+   "tiempo": 0.001952
+  },
+  "DI": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AO', 'DI')",
+   "distancia": 58,
+   "tiempo": 0.001958
+  },
+  "DJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP', 'DJ')",
+   "distancia": 54,
+   "tiempo": 0.001956
+  },
+  "DK": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP', 'DK')",
+   "distancia": 57,
+   "tiempo": 0.001951
+  },
+  "DL": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'Q', 'AP', 'DL')",
+   "distancia": 60,
+   "tiempo": 0.001954
+  },
+  "DM": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ', 'DM')",
+   "distancia": 50,
+   "tiempo": 0.002674
+  },
+  "DN": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ', 'DN')",
+   "distancia": 50,
+   "tiempo": 0.00341
+  },
+  "DO": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AQ', 'DO')",
+   "distancia": 56,
+   "tiempo": 0.001956
+  },
+  "DP": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR', 'DP')",
+   "distancia": 51,
+   "tiempo": 0.001955
+  },
+  "DQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR', 'DQ')",
+   "distancia": 54,
+   "tiempo": 0.001952
+  },
+  "DR": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AR', 'DR')",
+   "distancia": 57,
+   "tiempo": 0.001953
+  },
+  "DS": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS', 'DS')",
+   "distancia": 54,
+   "tiempo": 0.001952
+  },
+  "DT": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS', 'DT')",
+   "distancia": 56,
+   "tiempo": 0.001964
+  },
+  "DU": {
+   "ruta_hallada": "('A', 'C', 'E', 'I', 'R', 'AS', 'DU')",
+   "distancia": 59,
+   "tiempo": 0.00195
+  },
+  "DV": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT', 'DV')",
+   "distancia": 42,
+   "tiempo": 0.00195
+  },
+  "DW": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT', 'DW')",
+   "distancia": 45,
+   "tiempo": 0.001949
+  },
+  "DX": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AT', 'DX')",
+   "distancia": 48,
+   "tiempo": 0.001948
+  },
+  "DY": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU', 'DY')",
+   "distancia": 46,
+   "tiempo": 0.001946
+  },
+  "DZ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU', 'DZ')",
+   "distancia": 67,
+   "tiempo": 0.001951
+  },
+  "EA": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AU', 'EA')",
+   "distancia": 52,
+   "tiempo": 0.001949
+  },
+  "EB": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV', 'EB')",
+   "distancia": 51,
+   "tiempo": 0.002877
+  },
+  "EC": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV', 'EC')",
+   "distancia": 54,
+   "tiempo": 0.003409
+  },
+  "ED": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'S', 'AV', 'ED')",
+   "distancia": 57,
+   "tiempo": 0.003415
+  },
+  "EE": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW', 'EE')",
+   "distancia": 59,
+   "tiempo": 0.003419
+  },
+  "EF": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW', 'EF')",
+   "distancia": 62,
+   "tiempo": 0.003076
+  },
+  "EG": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AW', 'EG')",
+   "distancia": 69,
+   "tiempo": 0.001976
+  },
+  "EH": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX', 'EH')",
+   "distancia": 62,
+   "tiempo": 0.001965
+  },
+  "EI": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX', 'EI')",
+   "distancia": 65,
+   "tiempo": 0.001961
+  },
+  "EJ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AX', 'EJ')",
+   "distancia": 68,
+   "tiempo": 0.001955
+  },
+  "EK": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY', 'EK')",
+   "distancia": 65,
+   "tiempo": 0.001956
+  },
+  "EL": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY', 'EL')",
+   "distancia": 68,
+   "tiempo": 0.001953
+  },
+  "EM": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'T', 'AY', 'EM')",
+   "distancia": 71,
+   "tiempo": 0.001953
+  },
+  "EN": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ', 'EN')",
+   "distancia": 57,
+   "tiempo": 0.001952
+  },
+  "EO": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ', 'EO')",
+   "distancia": 62,
+   "tiempo": 0.003422
+  },
+  "EP": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'AZ', 'EP')",
+   "distancia": 51,
+   "tiempo": 0.003416
+  },
+  "EQ": {
+   "ruta_hallada": "('A', 'C', 'E', 'J', 'U', 'BA', 'EQ')",
+   "distancia": 66,
+   "tiempo": 0.003414
+  }
+ }
+}

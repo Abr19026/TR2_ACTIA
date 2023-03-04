@@ -1,8 +1,8 @@
 import heapq
 from grafo import Grafo
-from itertools import permutations, pairwise, filterfalse
+from itertools import pairwise
 
-def dijkstra(grafo, origen):
+def dijkstra(grafo: Grafo, origen):
     """Implementación del algoritmo de Dijkstra para encontrar las distancias más cortas desde un nodo origen a todos los demás nodos en el grafo."""
     distancias = {v: float('inf') for v in grafo.get_nodos()}
     distancias[origen] = 0
@@ -11,15 +11,15 @@ def dijkstra(grafo, origen):
         (dist, v) = heapq.heappop(heap)
         if dist > distancias[v]:
             continue
-        for w in grafo.obtener_vertices_adyacentes(v):
-            distancia_nueva = dist + grafo.obtener_peso_arista(v, w)
+        for w in grafo.get_vecinos(v):
+            distancia_nueva = dist + grafo.adyacencias[v][w]
             if distancia_nueva < distancias[w]:
                 distancias[w] = distancia_nueva
                 heapq.heappush(heap, (distancia_nueva, w))
     return distancias
 
 
-def ruta_mas_corta_profundidad(grafo, origen, destino):
+def ruta_mas_corta_profundidad(grafo: Grafo, origen, destino):
     """Encuentra la ruta más corta entre dos nodos utilizando 
     el algoritmo de búsqueda en profundidad, comenzando desde 
     la ruta más corta encontrada por el algoritmo de Dijkstra."""
@@ -30,8 +30,8 @@ def ruta_mas_corta_profundidad(grafo, origen, destino):
     actual = destino
     while actual != origen:
         ruta_mas_corta.append(actual)
-        for v in grafo.obtener_vertices_adyacentes(actual):
-            if distancias[v] == distancias[actual] - grafo.obtener_peso_arista(v, actual):
+        for v in grafo.get_vecinos(actual):
+            if distancias[v] == distancias[actual] - grafo.adyacencias[v][actual]:
                 actual = v
                 break
     ruta_mas_corta.append(origen)
@@ -41,7 +41,7 @@ def ruta_mas_corta_profundidad(grafo, origen, destino):
         return None
     peso = 0
     for v, w in pairwise(ruta):
-        peso += grafo.obtener_peso_arista(v, w)
+        peso += grafo.adyacencias[v][w]
     return peso, ruta
 
 def buscar_profundidad(grafo, inicio, fin, ruta_mas_corta):
