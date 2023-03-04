@@ -74,4 +74,6 @@ def probar_profundidad():
     with open(carpeta_script + "./resultado_profundidad.json", "w") as salida:
         json.dump(resultados_profundidad,salida,indent=1)
 
+probar_amplitud()
 probar_profundidad()
+probar_dijkstra()
