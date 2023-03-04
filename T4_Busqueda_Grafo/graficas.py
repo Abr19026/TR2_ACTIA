@@ -6,6 +6,9 @@ import os
 carpeta_script = os.path.dirname(os.path.abspath(__file__))
 
 # Carga resultados
+
+
+
 resultados_amplitud = {}
 resultados_dijkstra = {}
 resultados_profundidad = {}
@@ -16,6 +19,9 @@ with open(carpeta_script + "/resultado_amplitud.json") as arch_result:
 with open(carpeta_script + "/resultado_dijkstra.json") as arch_result:
     resultados_dijkstra = json.load(arch_result)
 
+instancias = []
+for grafo in resultados_amplitud:
+    instancias.append(grafo)
 
 def iterar_llave_nodo(dicc: dict, grafo, key):
     for nodo in dicc[grafo]:
@@ -66,18 +72,30 @@ for grafo in resultados_amplitud:
 
     resumen[grafo] = resultados_graficar
 
+def iterar_llave_result(dicc: dict, key1,key2):
+    for grafo in dicc:
+        yield dicc[grafo][key1][key2]
+    return
+resumen_formato = {}
+resumen_formato["min_amp"] = set(iterar_llave_result(resumen,"amplitud","minimo"))
+resumen_formato["max_amp"] = set(iterar_llave_result(resumen,"amplitud","maximo"))
+resumen_formato["prom_amp"] = set(iterar_llave_result(resumen,"amplitud","promedio"))
+resumen_formato["min_prof"] = set(iterar_llave_result(resumen,"amplitud","minimo"))
+resumen_formato["max_prof"] = set(iterar_llave_result(resumen,"amplitud","maximo"))
+resumen_formato["prom_prof"] = set(iterar_llave_result(resumen,"amplitud","promedio"))
+resumen_formato["djikstra"] = set(iterar_llave_result(resumen,"dijkstra","promedio"))
+
 #Graficar resultados de resumen
 
-"""
 #Grafica resultados
 x = np.arange(len(instancias))  # the label locations
-width = 0.25  # the width of the bars
-multiplier = 0.4
+width = 0.12  # the width of the bars
+multiplier = 0
 
 fig, ax = plt.subplots(constrained_layout=True)
 
 
-for attribute, measurement in algoritmos_tiempos.items():
+for attribute, measurement in resumen_formato.items():
     offset = width * multiplier
     rects = ax.bar(x + offset, measurement, width, label=attribute)
     ax.bar_label(rects, padding=3)
@@ -91,4 +109,3 @@ ax.legend(loc='upper left', ncols=3)
 ax.set_ylim(0, 1000)
 
 plt.show()
-"""
