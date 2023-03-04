@@ -1,6 +1,7 @@
 from grafo import Grafo
 from grafos_ejemplo import aristas_g1,aristas_g2,aristas_g3
 from busqueda_amplitud import ruta_mas_corta_amplitud
+from busqueda_profundidad import ruta_mas_corta_profundidad
 import timeit
 
 # En este archivo se realizarán las pruebas
