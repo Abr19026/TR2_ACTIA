@@ -23,6 +23,7 @@ def iterar_llave_nodo(dicc: dict, grafo, key):
             yield dicc[grafo][nodo][key]
     return
 
+# Diccionario con resultados
 resumen = {}
 
 for grafo in resultados_amplitud:
@@ -64,7 +65,10 @@ for grafo in resultados_amplitud:
     resultados_graficar["dijkstra"]["promedio"] = resultados_dijkstra[grafo]["tiempo"]
 
     resumen[grafo] = resultados_graficar
-    
+
+#Graficar resultados de resumen
+
+"""
 #Grafica resultados
 x = np.arange(len(instancias))  # the label locations
 width = 0.25  # the width of the bars
@@ -87,3 +91,4 @@ ax.legend(loc='upper left', ncols=3)
 ax.set_ylim(0, 1000)
 
 plt.show()
+"""
