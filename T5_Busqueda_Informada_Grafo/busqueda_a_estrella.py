@@ -31,10 +31,11 @@ def busqueda_a_estrella(grafo: Grafo, nodo_inicial, nodo_final, heuristica):
     return visitados
 
 def obtener_ruta(nodos_visitados, Nodo_final):
-    peso_ruta = 0
+    if Nodo_final not in nodos_visitados:
+        raise Exception("No se hayó camino")
     ruta = [Nodo_final]
     while ruta[-1] is not None:
         peso, anterior = nodos_visitados[ruta[-1]]
         ruta.append(anterior)
-        peso_ruta += peso
-    return ( peso_ruta, tuple(reversed(ruta)) )
+    ruta.pop()
+    return ( nodos_visitados[Nodo_final][0], tuple(reversed(ruta)) )

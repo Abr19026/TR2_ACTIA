@@ -32,7 +32,7 @@ def generador_adyacencias(max_x,max_y,cantidad_vertices, cantidad_aristas):
     return generador_aristas(nodos,cantidad_aristas)
 
 if __name__ == "__main__":
-    aristas_grafo = generador_adyacencias(20,30,45,80)
+    aristas_grafo = generador_adyacencias(20,30,80,110)
     for arista in aristas_grafo:
         miembros, peso = arista[0], arista[1]
         print(f"Arista(({miembros[0]},{miembros[1]}), {round(peso, 2)}),")
