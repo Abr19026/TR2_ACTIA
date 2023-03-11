@@ -1,5 +1,6 @@
 from typing import (Any, FrozenSet, Tuple, NamedTuple, Iterable )
 
+import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
 
@@ -134,12 +135,15 @@ class Grafo:
             except ValueError:
                 return dicc_optimizados
 
-    def graficar(self):
+    def graficar(self, posicion_por_nodo = False):
         # Convierte grafo a networkx
         grafo_nx = nx.Graph()
         grafo_nx.add_edges_from([arista.arista_nx() for arista in self.get_aristas()])
         # Grafica grafo
-        pos=nx.spring_layout(grafo_nx)
+        if posicion_por_nodo:
+            pos = {x: np.array([x[0],x[1]]) for x in grafo_nx.nodes}
+        else:
+            pos=nx.spring_layout(grafo_nx)
         nx.draw_networkx(grafo_nx, pos)
         labels = nx.get_edge_attributes(grafo_nx,'weight')
         nx.draw_networkx_edge_labels(grafo_nx, pos, edge_labels=labels)

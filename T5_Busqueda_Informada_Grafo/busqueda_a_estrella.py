@@ -2,7 +2,7 @@ from grafo import Grafo, tipo_nodo
 from typing import Tuple, List
 from heapq import *
 
-def busqueda_a_estrella(grafo: Grafo, nodo_inicial, nodo_final, heuristica: dict[tipo_nodo,float]):
+def busqueda_a_estrella(grafo: Grafo, nodo_inicial, nodo_final, heuristica):
     # Creo una estructura buscables que se ordene de menor a mayor respecto a f(x)
     # Contiene tuplas (f(nodo),g(nodo),nodo, nodo_anterior)
     buscables: List(Tuple[float,float,tipo_nodo]) = []
@@ -22,7 +22,7 @@ def busqueda_a_estrella(grafo: Grafo, nodo_inicial, nodo_final, heuristica: dict
         # Agrego sus hijos a buscables con su valor f(x) = g(x) + h(x)
         for vecino in grafo.get_vecinos(nodo_sacado):
             peso = peso_sacado + grafo.costo_nodo(nodo_sacado, vecino)
-            heur = heuristica[vecino]
+            heur = heuristica(grafo, vecino, nodo_final)
             f_nodo = peso + heur
             # Lo agrego a menos que ya exista y su peso anterior sea menor.
             if  vecino not in visitados  or  visitados[vecino][0] > peso:
