@@ -5,7 +5,7 @@ import networkx as nx
 
 #Archivo con las definiciones de la clase grafo
 
-tipo_nodo = Any
+tipo_nodo = Tuple[float,float]
 
 class RutaToNodo(NamedTuple):
     nodo_anterior: tipo_nodo
