@@ -13,10 +13,11 @@ class RutaToNodo(NamedTuple):
     distancia_min: float
     def __repr__(self) -> str:
         return f"({self.nodo_anterior}, {self.distancia_min})"
+
 ruta_out = dict[tipo_nodo, RutaToNodo]
 
 class Arista:
-    
+    __slots__ = ("vecinos", "peso")
     def __init__(self, vecinos: Tuple[tipo_nodo, tipo_nodo], peso: float=0):
         if len(vecinos) != 2:
             raise Exception("Arista no valida")
@@ -50,7 +51,7 @@ def aumentar_dict_dict(diccionario: dict[tipo_nodo, dict[tipo_nodo, float]], nod
 
 
 class Grafo:
-
+    __slots__ = ("adyacencias")
     def __init__(self, adyacencias: Iterable[Arista]):
         self.adyacencias: dict[tipo_nodo, dict[tipo_nodo,float]] = {}
         for arista in adyacencias:
