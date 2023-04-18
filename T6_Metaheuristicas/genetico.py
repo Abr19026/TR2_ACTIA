@@ -169,7 +169,7 @@ def genetico_ruta_mas_corta(grafo: Grafo,
                             minimas_generaciones: int,
                             heurist) -> set[Ind_ruta]:
     num_gene_actual = 0
-    sols_halladas = set()
+    sols_halladas: set[Ind_ruta] = set()
     poblacion_actual = Poblacion(grafo = None, copiar=poblacion_inicial)
     while len(sols_halladas) == 0 or (len(sols_halladas) == 0 and num_gene_actual < minimas_generaciones):
         nueva_poblacion = Poblacion(grafo)
@@ -179,26 +179,12 @@ def genetico_ruta_mas_corta(grafo: Grafo,
             if pareja is not None:
                 hijo = reproduccion(individuo, i, pareja, j)
                 ## mutación ##
-                """
-                print(f"---------\ncorte = {i} en {individuo.camino[i]}")
-                for i, item in enumerate(individuo.camino):
-                    print(i, f": {item}, ",end='')
-                print(f"\ncorte = {j}")
-                for i, item in enumerate(pareja.camino):
-                    print(i, f": {item}, ",end='')
-                print(f"\n inicio = {var_global}")
-                for i, item in enumerate(hijo.camino):
-                    print(i, f": {item}, ",end='')
-                #corte y reemplazo de cola (20%) de que corte hasta 1 décimo del camino
-                if random.randrange(10) < 2:
-                    hijo.corte(floor(len(hijo.camino)/10), heurist)
-                """    
                 #expansion al azar (de 0 a 10 nodos)
                 hijo.expandir_azar(random.randrange(10), heurist)
-                ## quitar ciclos y checar que no se pase del objetivo ##
+                ##hecar que no se pase del objetivo ##
                 hijo.factible = hijo.hijo_checar(heurist)
                 nueva_poblacion.agregar_individuo(hijo)
 
         #selección de población (Mezcla población 1 y 2 para determinar cuales individuos forman nueva gen)
         poblacion_actual, sols_halladas = combinar_poblaciones(poblacion_actual, nueva_poblacion)
-    return sols_halladas
+    return min(sols_halladas, key = lambda x: x.peso)

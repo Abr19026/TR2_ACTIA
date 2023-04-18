@@ -37,6 +37,6 @@ for grafo,nodos_busqueda in zip(grafos, nodos_in_fin):
     #for camino in poblacion_inicial.elems:
     #    print(camino.camino)
     
-    soluciones = genetico_ruta_mas_corta(grafo, poblacion_inicial, minimas_generaciones, heuristica_dist)
-    for sol in soluciones:
-        print(f"peso = {sol.peso}, heur = {sol.heuristica},\ncamino{sol.camino}\n")
+    sol = genetico_ruta_mas_corta(grafo, poblacion_inicial, minimas_generaciones, heuristica_dist)
+    print(f"-------------------------------------------")
+    print(f"peso = {sol.peso}, heur = {sol.heuristica},\ncamino{sol.camino}\n")
