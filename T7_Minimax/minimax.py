@@ -22,9 +22,9 @@ def heuristica(estado: JuegoGato, jugador: int):
 def get_transiciones(estado: JuegoGato)-> list[int]:
     return [x for x in range(9) if estado.posicion_valida(x)]
 
-def minimax(estado: JuegoGato, maximizando: bool, jugador)-> tuple[int,float]:
+def minimax(estado: JuegoGato, maximizando: bool, jugador, max_prof)-> tuple[int,float]:
     transiciones = get_transiciones(estado)
-    if len(transiciones) > 0:
+    if len(transiciones) > 0 and max_prof > 0:
         mejor_transicion = (None, float("-inf") if maximizando else float("inf"))
         for accion in transiciones:
             # aplica estado al cada rama
@@ -33,7 +33,7 @@ def minimax(estado: JuegoGato, maximizando: bool, jugador)-> tuple[int,float]:
             hijo.insertar_jugada(acc_x, acc_y)
             hijo.alternar_turno()
             # continua minimax
-            resultado_minimax = minimax(hijo, not maximizando, jugador)
+            resultado_minimax = minimax(hijo, not maximizando, jugador, max_prof - 1)
             
             # Guarda (accion, heuristica) que mejora la condición
             nueva_transicion = (accion, resultado_minimax[1])

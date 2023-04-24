@@ -3,6 +3,7 @@ from minimax import minimax
 
 # puede ser 1 o 2
 turno_algoritmo = 1
+profundidad_minimax = 5
 
 # 1er turno es algoritmo, 2do es jugador
 # prueba juego de gato manual
@@ -20,7 +21,7 @@ if __name__ == "__main__":
             pos_input = -1
             
             if tablero.turno == turno_algoritmo:
-                valor_minimax = minimax(tablero,True,turno_algoritmo)
+                valor_minimax = minimax(tablero, True, turno_algoritmo, profundidad_minimax)
                 pos_input = valor_minimax[0]
                 print(f"Algoritmo colocó en posición: {pos_input + 1}")
             else:
