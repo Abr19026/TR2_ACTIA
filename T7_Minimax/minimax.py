@@ -15,8 +15,10 @@ def heuristica(estado: JuegoGato, jugador: int):
     for forma_ganar in estado.estado_formas_ganar:
         if forma_ganar in rango_bueno:
             valor_heur += 1
+            #valor_heur += abs(forma_ganar)
         elif forma_ganar != 11:
             valor_heur -= 1
+            #valor_heur -= abs(forma_ganar)
     return valor_heur
 
 def get_transiciones(estado: JuegoGato)-> list[int]:
