@@ -7,7 +7,7 @@ from timeit import default_timer
 turno_algoritmo = 1
 
 #Ajusta la profundidad máxima
-profundidad_minimax = 9
+profundidad_minimax = 6
 
 # 1er turno es algoritmo, 2do es jugador
 # prueba juego de gato manual
@@ -16,6 +16,7 @@ if __name__ == "__main__":
     turnos_completados = 0
     while nuevo_juego:
         tablero = JuegoGato()
+        lista_tiempos = []
         buffer_vid = buffer_vid = JuegoGato.tablero_con_numeros()
         imprimir_tablero(buffer_vid)
         while True:
@@ -29,6 +30,7 @@ if __name__ == "__main__":
                 valor_minimax = minimax(tablero, True, turno_algoritmo, profundidad_minimax)
                 t_1 = default_timer()
                 periodo_tiempo = round(t_1 - t_0, 6)
+                lista_tiempos.append(periodo_tiempo)
                 pos_input = valor_minimax[0]
                 print(f"Algoritmo colocó en posición: {pos_input + 1} después de {periodo_tiempo} segundos")
             else:
@@ -55,11 +57,13 @@ if __name__ == "__main__":
             imprimir_tablero(buffer_vid)
             turnos_completados += 1
 
-            if tablero.juego_terminado == 1:
-                print( f"FIN DEL JUEGO: GANARON LAS [{tablero.simbolos_turno[tablero.turno - 1]}]")
-                break
-            elif tablero.juego_terminado == 2:
-                print("FIN DEL JUEGO: EMPATE")
+            if tablero.juego_terminado != 0:
+                if tablero.juego_terminado == 1:
+                    print( f"FIN DEL JUEGO: GANARON LAS [{tablero.simbolos_turno[tablero.turno - 1]}]")
+                elif tablero.juego_terminado == 2:
+                    print("FIN DEL JUEGO: EMPATE")
+                
+                print(f"tiempos algoritmo {lista_tiempos}")
                 break
             tablero.alternar_turno()
         nuevo_juego = False
