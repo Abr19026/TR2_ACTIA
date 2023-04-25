@@ -7,7 +7,7 @@ from timeit import default_timer
 turno_algoritmo = 1
 
 #Ajusta la profundidad máxima
-profundidad_minimax = 8
+profundidad_minimax = 9
 
 # 1er turno es algoritmo, 2do es jugador
 # prueba juego de gato manual

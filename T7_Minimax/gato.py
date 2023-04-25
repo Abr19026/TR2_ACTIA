@@ -44,14 +44,15 @@ class JuegoGato:
         return (posicion in range(9) and self.tablero[posy][posx] == 0)
 
     def set_ganancia(self, rango_valido: range, pos_ganancia):
+        # si está en mi favor o vacío
         if self.estado_formas_ganar[pos_ganancia] in rango_valido:
             self.estado_formas_ganar[pos_ganancia] += rango_valido[1]
             # Marca si alguien ya ganó el juego
             if self.estado_formas_ganar[pos_ganancia] == rango_valido[-1]:
                 self.juego_terminado = 1
         else:
-            # Quita esa forma de ganar
-            if self.estado_formas_ganar != 11:
+            # si está en mi contra se neutraliza
+            if self.estado_formas_ganar[pos_ganancia] != 11:
                 self.formas_ganar_anuladas += 1
                 self.estado_formas_ganar[pos_ganancia] = 11
                 # Marca empate si ya no hay formas de ganar
