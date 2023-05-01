@@ -14,12 +14,15 @@ def heuristica(estado: JuegoGato, jugador: int):
     valor_heur = 0
     for forma_ganar in estado.estado_formas_ganar:
         if forma_ganar in rango_bueno:
-            if forma_ganar == 3:
+            if abs(forma_ganar) == 3:
                 valor_heur += forma_ganar**2
             else:
                 valor_heur += (forma_ganar + 1)**2
         elif forma_ganar != 11:
-            valor_heur -= forma_ganar**2
+            if abs(forma_ganar) == 3:
+                return -1000
+            else:
+                valor_heur -= forma_ganar**2
     return valor_heur
 
 # Dado un estado del juego del gato, obtiene las posibles

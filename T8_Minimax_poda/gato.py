@@ -1,3 +1,4 @@
+import colorama as cr
 # Dada coordenada de 0 a 2
 # Retorna posición de 0 a 8
 def coord_a_pos(intx,inty):
@@ -96,10 +97,23 @@ class JuegoGato:
     def alternar_turno(self):
         self.turno = self.otro_turno[self.turno]
 
-def imprimir_tablero(buffer_vid: list[chr]):
-    print(''.join(buffer_vid))
+def imprimir_tablero(buffer_vid: list[chr], color=False):
+    cr.init(autoreset=True)
+    if color:
+        nuevo_buffer = []
+        for char in buffer_vid:
+            if char == JuegoGato.simbolos_turno[0]:
+                nuevo_buffer.extend((cr.Fore.YELLOW, char, cr.Fore.RESET))
+            elif char == JuegoGato.simbolos_turno[1]:
+                nuevo_buffer.extend((cr.Fore.CYAN, char, cr.Fore.RESET))
+            else:
+                nuevo_buffer.append(char)
+        print(''.join(nuevo_buffer))
+    else:
+        print(''.join(buffer_vid))
 
 # prueba juego de gato manual
+"""
 if __name__ == "__main__":
     nuevo_juego = True
     turnos_completados = 0
@@ -144,3 +158,4 @@ if __name__ == "__main__":
                 break
             tablero.alternar_turno()
         nuevo_juego = False
+"""

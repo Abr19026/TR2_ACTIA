@@ -1,7 +1,7 @@
 from gato import JuegoGato, imprimir_tablero, pos_a_coord
 from minimax_poda import minimax
 from timeit import default_timer
-
+import colorama as cr
 
 # puede ser 1 o 2
 turno_algoritmo = 1
@@ -18,7 +18,7 @@ if __name__ == "__main__":
         tablero = JuegoGato()
         lista_tiempos = []
         buffer_vid = buffer_vid = JuegoGato.tablero_con_numeros()
-        imprimir_tablero(buffer_vid)
+        imprimir_tablero(buffer_vid, True)
         while True:
 
             # Pide entrada
@@ -54,14 +54,14 @@ if __name__ == "__main__":
             coordx, coordy = pos_a_coord(pos_input)
             tablero.insertar_jugada(coordx, coordy, buffer_vid)
             print("-------------------")
-            imprimir_tablero(buffer_vid)
+            imprimir_tablero(buffer_vid, True)
             turnos_completados += 1
 
             if tablero.juego_terminado != 0:
                 if tablero.juego_terminado == 1:
-                    print( f"FIN DEL JUEGO: GANARON LAS [{tablero.simbolos_turno[tablero.turno - 1]}]")
+                    print( f"{cr.Fore.GREEN}FIN DEL JUEGO: GANARON LAS [{tablero.simbolos_turno[tablero.turno - 1]}]{cr.Fore.RESET}")
                 elif tablero.juego_terminado == 2:
-                    print("FIN DEL JUEGO: EMPATE")
+                    print(f"{cr.Fore.YELLOW}FIN DEL JUEGO: EMPATE{cr.Fore.RESET}")
                 
                 print(f"tiempos algoritmo {lista_tiempos}")
                 break
