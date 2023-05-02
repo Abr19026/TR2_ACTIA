@@ -7,7 +7,7 @@ import colorama as cr
 turno_algoritmo = 1
 
 #Ajusta la profundidad máxima
-profundidad_minimax = 9
+profundidad_minimax = 3
 
 # 1er turno es algoritmo, 2do es jugador
 # prueba juego de gato manual

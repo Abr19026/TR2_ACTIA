@@ -154,5 +154,6 @@ cython_debug/
 
 #Otros
 T2_Dijkstra/grafo_lista.py
+pseudocodigo.py
 .vscode/
 pyrightconfig.json

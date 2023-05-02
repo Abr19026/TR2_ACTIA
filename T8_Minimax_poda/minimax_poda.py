@@ -14,10 +14,7 @@ def heuristica(estado: JuegoGato, jugador: int):
     valor_heur = 0
     for forma_ganar in estado.estado_formas_ganar:
         if forma_ganar in rango_bueno:
-            if abs(forma_ganar) == 3:
-                valor_heur += forma_ganar**2
-            else:
-                valor_heur += (forma_ganar + 1)**2
+            valor_heur += forma_ganar**2
         elif forma_ganar != 11:
             if abs(forma_ganar) == 3:
                 return -1000
@@ -55,7 +52,7 @@ def minimax(estado: JuegoGato, maximizando: bool, jugador, profundidad_max = flo
                 if nueva_transicion[1] >= lim_sup:
                     break
                 # Actualiza valor de poda (alfa) para el siguiente hijo
-                lim_inf = max(lim_inf, resultado_minimax[1])
+                lim_inf = max(lim_inf, nueva_transicion[1])
                 
             else:
                 # Obtiene la mejor transición (La que minimiza el valor heuristico)
